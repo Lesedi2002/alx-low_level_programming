@@ -2,6 +2,8 @@
 /**
  * main - Entry point
  *
+ * Description: this code is a statement
+ *
  * return: always 0 (success)
  */
 
