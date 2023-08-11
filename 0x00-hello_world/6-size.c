@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -7,7 +8,7 @@
  * return: always 0 (success)
  */
 
-int main(void) 
+int main(void)
 {
 	int a;
 	long int b;
