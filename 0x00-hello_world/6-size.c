@@ -3,8 +3,6 @@
 /**
  * main - Entry point
  *
- * Description: some code
- *
  * return: always 0 (success)
  */
 
