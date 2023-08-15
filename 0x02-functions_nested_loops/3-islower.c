@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _islower - Entry point
- *
- * return: 1 if is lowercase or 0 if is uppercase
+ * @c: character to be verified
+ * Return: 1 or 0
  */
 
 int _islower(int c)
