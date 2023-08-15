@@ -1,4 +1,4 @@
-#include "mai.h"
+#include "main.h"
 /**
  * _isalpha - Entry point
  * @c: character to be verified
