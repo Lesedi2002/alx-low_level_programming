@@ -7,7 +7,7 @@
 
 int print_sign(int n)
 {
-	int value = 0
+	int value;
 
 	if (n > 0)
 	{
