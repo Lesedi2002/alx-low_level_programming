@@ -2,10 +2,10 @@
 /**
  * main - Entry point
  *
- * return: Always 0
+ * return:
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char alphabet;
 
@@ -13,5 +13,4 @@ int main(void)
 		_putchar(alphabet);
 
 	_putchar('\n');
-	return (0);
 }	
