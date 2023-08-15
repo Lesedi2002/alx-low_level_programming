@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * return: Always 0
+ * return: Nothing
  */
 
 void print_alphabet(void)
@@ -14,5 +14,4 @@ void print_alphabet(void)
 		_putchar(alphabet);
 
 	_putchar('\n');
-	return (0);
 }
