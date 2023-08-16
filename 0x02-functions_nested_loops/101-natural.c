@@ -11,7 +11,7 @@ int main(void)
 
 	for (a = 0; a < 1024; a++)
 		if (a % 3 == 0 || a % == 0)
-			num += a;
+			sum += a;
 	printf("%d\n", sum);
 	return (0);
 }
