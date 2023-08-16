@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  * Description: print the first 98 fibonacci numbers
- * return: Nothing
+ * return: return 0
  */
 
 int main(void)
@@ -24,7 +24,7 @@ int main(void)
 	d = a % 1000;
 	a = a / 1000;
 	e = b % 1000;
-	b = b / 1001;
+	b = b / 1000;
 	while (count <= 98)
 	{
 		carry = (d + e) / 1000;
