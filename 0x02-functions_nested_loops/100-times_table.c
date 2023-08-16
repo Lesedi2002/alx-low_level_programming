@@ -16,7 +16,7 @@ void print_times_table(int n)
 		{
 			for (mul = 0; mul <= n; mul++)
 			{
-				num = (dig * mul)
+				num = (dig * mul);
 				if (mul != 0)
 				{
 					_putchar(',');
@@ -44,7 +44,7 @@ void print_times_table(int n)
 				else
 					_putchar((num % 10) + '0');
 			}
-			_putchar('\n')
+			_putchar('\n');
 		}
 	}
 }
