@@ -19,7 +19,7 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
-		printf("%lu, ", k);
+		printf("%lu, ", c);
 	}
 	d = a % 1000;
 	a = a / 1000;
