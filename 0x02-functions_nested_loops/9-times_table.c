@@ -21,8 +21,8 @@ void times_table(void)
 			}
 			if (num >= 10)
 			{
-				_putchar((res / 10) + '0');
-				_putchar((res % 10) + '0');
+				_putchar((num / 10) + '0');
+				_putchar((num % 10) + '0');
 			}
 			else if (num < 10 && mul != 0)
 			{
