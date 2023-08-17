@@ -24,9 +24,9 @@ void print_times_table(int n)
 				else if (num < 10 && mul != 0)
 				{
 					_putchar(',');
-					_putchar('');
-					_putchar('');
-					_putchar('');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
 					_putchar(num + '0');
 				}
 				else if (num >= 10 && num < 100)
