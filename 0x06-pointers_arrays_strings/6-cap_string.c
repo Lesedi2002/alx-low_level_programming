@@ -8,27 +8,30 @@
 
 char *cap_string(char *str)
 {
-	int conversion, a, b;
+	int capt = 0;
 
-	char chars[] = {' ', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}',  '\t', '\n', '\0'};
-
-	conversion = 32;
-
-	for (a = 0; str[a] != '\0'; a++)
+	while (str[capt])
 	{
-		if (str[a] >= 'a' && str[a] <= 'z')
-		{
-			str[a] = str[a] - conversion;
-		}
-		conversion = 0;
-		for (b = 0; chars[b] != '\0'; b++)
-		{
-			if (chars[b] == str[a])
-			{
-				conversion = 32;
-				break;
-			}
-		}
+		while (!(str[capt] >= 'a' && str[capt] <= 'z'))
+			capt++;
+
+		if (str[capt - 1] == ' ' ||
+		str[capt - 1] == '\t' ||
+		str[capt - 1] == '\n' ||
+		str[capt - 1] == ',' ||
+		str[capt - 1] == ';' ||
+		str[capt - 1] == '.' ||
+		str[capt - 1] == '!' ||
+		str[capt - 1] == '?' ||
+		str[capt - 1] == '"' ||
+		str[capt - 1] == '(' ||
+		str[capt - 1] == ')' ||
+		str[capt - 1] == '{' ||
+		str[capt - 1] == '}' ||
+		capt == 0)
+			str[capt] -= 32;
+		capt++;
 	}
+
 	return (str);
 }
