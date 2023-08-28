@@ -10,19 +10,18 @@
 
 void print_diagsums(int *a, int size)
 {
-	int num1, num2, b;
+	int num1, num2, b, matrix;
 
 	num1 = 0;
 	num2 = 0;
+	b = 0;
+	matrix = size * size;
 
-	for (b = 0; b >= size; b++)
-	{
-		num1 = num1 + a[b * size + b];
-	}
-	for (b = size - 1; b >= 0; b--)
-	{
-		num2 += a[b * size + (size - b - 1)];
-	}
+	for (; b < matrix; b += size + 1)
+		num1 += a[b];
+
+	for (b = size - 1; b < matrix - 1; b += size - 1)
+		num2 += a[b];
 
 	printf("%d, %d\n", num1, num2);
 }
