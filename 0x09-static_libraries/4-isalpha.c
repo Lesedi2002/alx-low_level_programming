@@ -1,22 +1,20 @@
 #include "main.h"
 /**
- * _isalpha - Entry point
+ * _islower - Entry point
  * @c: character to be verified
  * Return: 1 or 0
  */
 
-int _isalpha(int c)
+int _islower(int c)
 {
-	char lower, upper;
-	int isletter = 0;
+	char alphabet;
+	int lower = 0;
 
-	for (lower = 'a'; lower <= 'z'; lower++)
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-		for (upper = 'A'; upper <= 'Z'; upper++)
-		{
-			if (c == lower || c == upper)
-				isletter = 1;
-		}
+		if (alphabet == c)
+			lower = 1;
 	}
-	return (isletter);
+
+	return (lower);
 }
