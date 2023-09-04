@@ -41,8 +41,13 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 
 		if (sum > 9)
 		{
-			store = 0;
+			store = sum / 10;
 			sum = (sum % 10) + '0';
+		}
+		else
+		{
+			store = 0;
+			sum = sum + '0';
 		}
 		r[biggest] = sum;
 		num1--;
@@ -54,4 +59,3 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	else
 		return (r + 1);
 }
-
