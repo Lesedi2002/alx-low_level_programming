@@ -13,6 +13,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	int a = 0, b = 0;
+	int j, i;
 	char *s;
 
 	if (s1 == NULL)
@@ -39,12 +40,12 @@ char *str_concat(char *s1, char *s2)
 	if (s == NULL)
 		return (NULL);
 
-	for (int i = 0; i < a; i++)
+	for (i = 0; i < a; i++)
 	{
 		s[i] = s1[i];
 	}
 
-	for (int j = 0; j <= b; j++)
+	for (j = 0; j <= b; j++)
 	{
 		s[a + j] = s2[j];
 	}
